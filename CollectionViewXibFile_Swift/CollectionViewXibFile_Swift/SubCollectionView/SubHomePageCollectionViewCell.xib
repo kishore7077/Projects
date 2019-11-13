@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SubHomePageCollectionViewCell" customModule="CollectionViewXibFile_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="227"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="227"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8g-EJ-ByD">
+                        <rect key="frame" x="0.0" y="10" width="321" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sA0-2J-QLh">
+                        <rect key="frame" x="148.5" y="35" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="LbO-zr-ZuM"/>
+                            <constraint firstAttribute="width" constant="24" id="jzn-Vs-eNk"/>
+                        </constraints>
+                        <state key="normal" image="sort-down"/>
+                        <connections>
+                            <action selector="downBtnAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="e3I-tG-aBS"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qH1-ci-Gmh">
+                        <rect key="frame" x="148.5" y="34" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="arm-lw-AxH"/>
+                            <constraint firstAttribute="height" constant="24" id="xLU-uf-lsh"/>
+                        </constraints>
+                        <state key="normal" image="caret-arrow-up"/>
+                        <connections>
+                            <action selector="upBtnAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ifb-Gd-RCp"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JlP-JT-zuV">
+                        <rect key="frame" x="0.0" y="60" width="321" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G02-33-BM4">
+                        <rect key="frame" x="0.0" y="86" width="321" height="141"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="141" id="6Mm-6R-vyM"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="G02-33-BM4" firstAttribute="top" secondItem="sA0-2J-QLh" secondAttribute="bottom" constant="27" id="9N7-2q-JUd"/>
+                <constraint firstItem="Y8g-EJ-ByD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MOh-fW-OFr"/>
+                <constraint firstItem="sA0-2J-QLh" firstAttribute="top" secondItem="Y8g-EJ-ByD" secondAttribute="bottom" constant="4" id="W0h-9h-Xqp"/>
+                <constraint firstAttribute="trailing" secondItem="Y8g-EJ-ByD" secondAttribute="trailing" id="WyA-y7-xet"/>
+                <constraint firstItem="sA0-2J-QLh" firstAttribute="centerX" secondItem="Y8g-EJ-ByD" secondAttribute="centerX" id="bqJ-Na-SbC"/>
+                <constraint firstItem="JlP-JT-zuV" firstAttribute="top" secondItem="qH1-ci-Gmh" secondAttribute="bottom" constant="2" id="cpc-Nf-mRS"/>
+                <constraint firstItem="JlP-JT-zuV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="e1E-dZ-diZ"/>
+                <constraint firstItem="Y8g-EJ-ByD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="gDM-m4-9LB"/>
+                <constraint firstItem="qH1-ci-Gmh" firstAttribute="centerX" secondItem="Y8g-EJ-ByD" secondAttribute="centerX" id="hBa-7o-it5"/>
+                <constraint firstAttribute="trailing" secondItem="JlP-JT-zuV" secondAttribute="trailing" id="hSg-dk-B1v"/>
+                <constraint firstItem="qH1-ci-Gmh" firstAttribute="top" secondItem="Y8g-EJ-ByD" secondAttribute="bottom" constant="3" id="mki-u1-UEn"/>
+                <constraint firstItem="G02-33-BM4" firstAttribute="top" secondItem="JlP-JT-zuV" secondAttribute="bottom" constant="5" id="u7m-wt-jHS"/>
+                <constraint firstItem="G02-33-BM4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="u9p-Up-sY8"/>
+                <constraint firstItem="JlP-JT-zuV" firstAttribute="top" secondItem="sA0-2J-QLh" secondAttribute="bottom" constant="1" id="wPI-3X-AoH"/>
+                <constraint firstAttribute="trailing" secondItem="G02-33-BM4" secondAttribute="trailing" id="x1e-IN-cfu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="321" height="227"/>
+            <connections>
+                <outlet property="constDownImageButton" destination="LbO-zr-ZuM" id="bzj-A6-bG4"/>
+                <outlet property="downBtn" destination="sA0-2J-QLh" id="VKd-Fw-AeU"/>
+                <outlet property="mainImageView" destination="G02-33-BM4" id="l3I-Rw-eG9"/>
+                <outlet property="mainLblTitle" destination="Y8g-EJ-ByD" id="edK-6Z-u0a"/>
+                <outlet property="subMainTitleLbl" destination="JlP-JT-zuV" id="6up-gu-Xax"/>
+                <outlet property="upBtn" destination="qH1-ci-Gmh" id="7Z1-Su-wXB"/>
+            </connections>
+            <point key="canvasLocation" x="87.200000000000003" y="83.208395802098963"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="caret-arrow-up" width="16" height="16"/>
+        <image name="sort-down" width="16" height="16"/>
+    </resources>
+</document>
