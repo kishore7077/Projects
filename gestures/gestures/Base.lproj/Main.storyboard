@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BAQ-1r-78M">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Swipw Img-->
+        <scene sceneID="ZpE-82-Tnm">
+            <objects>
+                <viewController storyboardIdentifier="SwipwImg" id="JpL-po-0Oo" customClass="SwipwImg" customModule="gestures" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Mt-mZ-ab3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2yq-UY-mfI">
+                                <rect key="frame" x="10" y="30" width="355" height="627"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2yq-UY-mfI" firstAttribute="top" secondItem="KMA-GZ-xeK" secondAttribute="top" constant="10" id="B3w-13-Fcx"/>
+                            <constraint firstItem="2yq-UY-mfI" firstAttribute="leading" secondItem="KMA-GZ-xeK" secondAttribute="leading" constant="10" id="GHs-QZ-hGs"/>
+                            <constraint firstItem="KMA-GZ-xeK" firstAttribute="bottom" secondItem="2yq-UY-mfI" secondAttribute="bottom" constant="10" id="JsN-Q0-iHh"/>
+                            <constraint firstItem="KMA-GZ-xeK" firstAttribute="trailing" secondItem="2yq-UY-mfI" secondAttribute="trailing" constant="10" id="ry0-iO-cKE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KMA-GZ-xeK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lWx-OF-yxh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1644" y="-15"/>
+        </scene>
+        <!--Swipe Gesture-->
+        <scene sceneID="AZ3-JY-pEh">
+            <objects>
+                <viewController id="BAQ-1r-78M" customClass="SwipeGesture" customModule="gestures" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4bh-Nh-gSE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="I75-O3-aK3"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="FbN-UO-CV6" appends="YES" id="XFq-ML-Log"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mi2-K3-08R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="FbN-UO-CV6"/>
+            </objects>
+            <point key="canvasLocation" x="-724" y="22.938530734632685"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="gestures" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="aNB-nX-IgA">
+                                <rect key="frame" x="67" y="125" width="240" height="193"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="193" id="UDk-HT-j7m"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="s2t-IM-xrk" appends="YES" id="avd-MI-4rq"/>
+                                    <outletCollection property="gestureRecognizers" destination="F18-tE-Jbg" appends="YES" id="Rw7-Fu-IVb"/>
+                                    <outletCollection property="gestureRecognizers" destination="LJG-GC-BwR" appends="YES" id="A09-db-bOl"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-2" translatesAutoresizingMaskIntoConstraints="NO" id="BlM-L3-YP2">
+                                <rect key="frame" x="67" y="386" width="240" height="183"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="183" id="h7s-f6-2N1"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="93b-y6-J5q" appends="YES" id="xzc-vU-wGN"/>
+                                    <outletCollection property="gestureRecognizers" destination="cQ0-5D-30i" appends="YES" id="7ev-RQ-pgh"/>
+                                    <outletCollection property="gestureRecognizers" destination="SDp-i9-0wY" appends="YES" id="x9X-tQ-qux"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="aNB-nX-IgA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="5Px-th-xji"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BlM-L3-YP2" secondAttribute="trailing" constant="68" id="Gnl-LM-KbJ"/>
+                            <constraint firstItem="aNB-nX-IgA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="105" id="R6V-c6-Lea"/>
+                            <constraint firstItem="BlM-L3-YP2" firstAttribute="top" secondItem="aNB-nX-IgA" secondAttribute="bottom" constant="68" id="X0b-fR-BhT"/>
+                            <constraint firstItem="BlM-L3-YP2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="gl5-rR-U00"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aNB-nX-IgA" secondAttribute="trailing" constant="68" id="wrn-y5-d6i"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bananaImage" destination="BlM-L3-YP2" id="VnK-T6-54B"/>
+                        <outlet property="monkeyImage" destination="aNB-nX-IgA" id="AaP-zG-fOC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="s2t-IM-xrk">
+                    <connections>
+                        <action selector="handlePanWithRecognizer:" destination="BYZ-38-t0r" id="gUr-YL-iKo"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="93b-y6-J5q">
+                    <connections>
+                        <action selector="handlePanWithRecognizer:" destination="BYZ-38-t0r" id="Arx-1K-hUN"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="F18-tE-Jbg">
+                    <connections>
+                        <action selector="pinchGestureWithRecognizer:" destination="BYZ-38-t0r" id="Pai-3N-myI"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <pinchGestureRecognizer id="cQ0-5D-30i">
+                    <connections>
+                        <action selector="pinchGestureWithRecognizer:" destination="BYZ-38-t0r" id="S8I-2z-Ljc"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="LJG-GC-BwR">
+                    <connections>
+                        <action selector="rotateGestureWithRecognizer:" destination="BYZ-38-t0r" id="W0A-U3-vdF"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <rotationGestureRecognizer id="SDp-i9-0wY">
+                    <connections>
+                        <action selector="rotateGestureWithRecognizer:" destination="BYZ-38-t0r" id="yhu-A7-UeL"/>
+                    </connections>
+                </rotationGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="118" y="121"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="56" height="62"/>
+        <image name="Image-2" width="65" height="66"/>
+    </resources>
+</document>
