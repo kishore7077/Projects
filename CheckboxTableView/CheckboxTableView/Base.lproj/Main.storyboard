@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CheckboxTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BAp-dH-exd">
+                                <rect key="frame" x="16" y="157" width="375" height="547"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DataTVC" rowHeight="76" id="0J7-rK-6HB" customClass="DataTVC" customModule="CheckboxTableView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0J7-rK-6HB" id="Wv7-pY-bhc">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="75.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="map-7g-4cI">
+                                                    <rect key="frame" x="30" y="21" width="315" height="34"/>
+                                                    <color key="backgroundColor" red="0.52952780758177698" green="0.95224202738195507" blue="0.43871692043748989" alpha="0.59259952910958902" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="map-7g-4cI" secondAttribute="trailing" constant="15" id="FgV-r6-RKl"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="map-7g-4cI" secondAttribute="bottom" constant="10" id="Qhe-ev-n46"/>
+                                                <constraint firstItem="map-7g-4cI" firstAttribute="top" secondItem="Wv7-pY-bhc" secondAttribute="topMargin" constant="10" id="ss0-c1-ANO"/>
+                                                <constraint firstItem="map-7g-4cI" firstAttribute="leading" secondItem="Wv7-pY-bhc" secondAttribute="leadingMargin" constant="15" id="xWX-rQ-RC2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblTitle" destination="map-7g-4cI" id="P4V-dI-U1r"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewTVC" rowHeight="76" id="4xe-SL-c1C" customClass="NewTVC" customModule="CheckboxTableView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="104" width="375" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4xe-SL-c1C" id="HLy-FX-4JZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="75.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBK-27-Sqw">
+                                                    <rect key="frame" x="30" y="22" width="265" height="28"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDm-nK-5pm">
+                                                    <rect key="frame" x="315" y="21" width="30" height="30"/>
+                                                    <color key="backgroundColor" red="0.99378797740000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="Mxa-KC-zFd"/>
+                                                        <constraint firstAttribute="height" constant="30" id="oGR-ph-WiY"/>
+                                                    </constraints>
+                                                    <state key="normal" image="Uncheck"/>
+                                                    <state key="selected" image="Screen Shot 2019-02-19 at 5.34.15 PM"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="OBK-27-Sqw" firstAttribute="leading" secondItem="HLy-FX-4JZ" secondAttribute="leadingMargin" constant="15" id="2nc-uH-3DQ"/>
+                                                <constraint firstItem="OBK-27-Sqw" firstAttribute="top" secondItem="HLy-FX-4JZ" secondAttribute="topMargin" constant="11" id="4z1-Pt-ROh"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="zDm-nK-5pm" secondAttribute="trailing" constant="15" id="5ne-gc-uXn"/>
+                                                <constraint firstItem="OBK-27-Sqw" firstAttribute="centerY" secondItem="zDm-nK-5pm" secondAttribute="centerY" id="Wa3-L6-kzU"/>
+                                                <constraint firstItem="zDm-nK-5pm" firstAttribute="leading" secondItem="OBK-27-Sqw" secondAttribute="trailing" constant="20" id="mZO-Ku-1iR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="btnAction" destination="zDm-nK-5pm" id="fqr-bQ-c9l"/>
+                                            <outlet property="btnLbl" destination="OBK-27-Sqw" id="OW0-sO-S5T"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Ulu-Rc-Kf3"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="rdN-2K-aSJ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BAp-dH-exd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="A70-hb-8Di"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BAp-dH-exd" secondAttribute="bottom" id="ETQ-9c-nh1"/>
+                            <constraint firstItem="BAp-dH-exd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Hru-5P-H2h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BAp-dH-exd" secondAttribute="trailing" id="bsg-kd-lJQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dataTblView" destination="BAp-dH-exd" id="cIQ-eI-6RR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Screen Shot 2019-02-19 at 5.34.15 PM" width="109" height="107"/>
+        <image name="Uncheck" width="30" height="29"/>
+    </resources>
+</document>
