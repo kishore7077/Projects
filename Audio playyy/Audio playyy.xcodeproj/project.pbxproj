@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECCCD3B3220C2F58007C4FAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD3B2220C2F58007C4FAC /* AppDelegate.swift */; };
+		ECCCD3B5220C2F58007C4FAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD3B4220C2F58007C4FAC /* ViewController.swift */; };
+		ECCCD3B8220C2F58007C4FAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCCD3B6220C2F58007C4FAC /* Main.storyboard */; };
+		ECCCD3BA220C2F58007C4FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCCD3B9220C2F58007C4FAC /* Assets.xcassets */; };
+		ECCCD3BD220C2F58007C4FAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCCD3BB220C2F58007C4FAC /* LaunchScreen.storyboard */; };
+		ECCCD3F1220C3412007C4FAC /* SampleAudio_0.4mb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ECCCD3F0220C3412007C4FAC /* SampleAudio_0.4mb.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ECCCD3AF220C2F58007C4FAC /* Audio playyy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audio playyy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECCCD3B2220C2F58007C4FAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECCCD3B4220C2F58007C4FAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECCCD3B7220C2F58007C4FAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECCCD3B9220C2F58007C4FAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECCCD3BC220C2F58007C4FAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECCCD3BE220C2F58007C4FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECCCD3F0220C3412007C4FAC /* SampleAudio_0.4mb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SampleAudio_0.4mb.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECCCD3AC220C2F58007C4FAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECCCD3A6220C2F58007C4FAC = {
+			isa = PBXGroup;
+			children = (
+				ECCCD3B1220C2F58007C4FAC /* Audio playyy */,
+			);
+			sourceTree = "<group>";
+		};
+		ECCCD3B0220C2F58007C4FAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECCCD3AF220C2F58007C4FAC /* Audio playyy.app */,
+			);
+			name = Products;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		ECCCD3B1220C2F58007C4FAC /* Audio playyy */ = {
+			isa = PBXGroup;
+			children = (
+				ECCCD3B2220C2F58007C4FAC /* AppDelegate.swift */,
+				ECCCD3B4220C2F58007C4FAC /* ViewController.swift */,
+				ECCCD3B6220C2F58007C4FAC /* Main.storyboard */,
+				ECCCD3B9220C2F58007C4FAC /* Assets.xcassets */,
+				ECCCD3F0220C3412007C4FAC /* SampleAudio_0.4mb.mp3 */,
+				ECCCD3BB220C2F58007C4FAC /* LaunchScreen.storyboard */,
+				ECCCD3BE220C2F58007C4FAC /* Info.plist */,
+				ECCCD3B0220C2F58007C4FAC /* Products */,
+			);
+			path = "Audio playyy";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECCCD3AE220C2F58007C4FAC /* Audio playyy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECCCD3C1220C2F58007C4FAC /* Build configuration list for PBXNativeTarget "Audio playyy" */;
+			buildPhases = (
+				ECCCD3AB220C2F58007C4FAC /* Sources */,
+				ECCCD3AC220C2F58007C4FAC /* Frameworks */,
+				ECCCD3AD220C2F58007C4FAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Audio playyy";
+			productName = "Audio playyy";
+			productReference = ECCCD3AF220C2F58007C4FAC /* Audio playyy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECCCD3A7220C2F58007C4FAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = trainee;
+				TargetAttributes = {
+					ECCCD3AE220C2F58007C4FAC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = ECCCD3AA220C2F58007C4FAC /* Build configuration list for PBXProject "Audio playyy" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECCCD3A6220C2F58007C4FAC;
+			productRefGroup = ECCCD3B0220C2F58007C4FAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECCCD3AE220C2F58007C4FAC /* Audio playyy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECCCD3AD220C2F58007C4FAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECCCD3BD220C2F58007C4FAC /* LaunchScreen.storyboard in Resources */,
+				ECCCD3BA220C2F58007C4FAC /* Assets.xcassets in Resources */,
+				ECCCD3B8220C2F58007C4FAC /* Main.storyboard in Resources */,
+				ECCCD3F1220C3412007C4FAC /* SampleAudio_0.4mb.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECCCD3AB220C2F58007C4FAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECCCD3B5220C2F58007C4FAC /* ViewController.swift in Sources */,
+				ECCCD3B3220C2F58007C4FAC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ECCCD3B6220C2F58007C4FAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECCCD3B7220C2F58007C4FAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ECCCD3BB220C2F58007C4FAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECCCD3BC220C2F58007C4FAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECCCD3BF220C2F58007C4FAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECCCD3C0220C2F58007C4FAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECCCD3C2220C2F58007C4FAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Audio playyy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "toxsl.Audio-playyy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECCCD3C3220C2F58007C4FAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Audio playyy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "toxsl.Audio-playyy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECCCD3AA220C2F58007C4FAC /* Build configuration list for PBXProject "Audio playyy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECCCD3BF220C2F58007C4FAC /* Debug */,
+				ECCCD3C0220C2F58007C4FAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECCCD3C1220C2F58007C4FAC /* Build configuration list for PBXNativeTarget "Audio playyy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECCCD3C2220C2F58007C4FAC /* Debug */,
+				ECCCD3C3220C2F58007C4FAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECCCD3A7220C2F58007C4FAC /* Project object */;
+}
