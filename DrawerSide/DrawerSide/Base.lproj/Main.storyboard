@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tl0-hk-Vpl">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="A0c-aZ-mWV">
+            <objects>
+                <viewController id="Tl0-hk-Vpl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lF4-TT-h4H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="YNw-bg-3Lt"/>
+                    </view>
+                    <connections>
+                        <segue destination="fmC-vD-kMe" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSeguePushController" id="PGY-BX-Z8E"/>
+                        <segue destination="T6n-58-OJs" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSeguePushController" id="9ZL-Yd-eaj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eoi-B9-sUZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-716" y="134"/>
+        </scene>
+        <!--FrontVC-->
+        <scene sceneID="B1H-pf-Pqo">
+            <objects>
+                <viewController storyboardIdentifier="FrontVC" id="fmC-vD-kMe" customClass="FrontVC" customModule="DrawerSide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ern-AD-pU9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8e-Ca-sHB">
+                                <rect key="frame" x="20" y="74" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BW7-oy-hoo"/>
+                                    <constraint firstAttribute="width" constant="50" id="JXd-ze-tNW"/>
+                                </constraints>
+                                <state key="normal" image="menu-512"/>
+                                <connections>
+                                    <action selector="leftBtn:" destination="fmC-vD-kMe" eventType="touchUpInside" id="Syy-Nx-PrG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j8e-Ca-sHB" firstAttribute="top" secondItem="Sjy-XT-q3a" secondAttribute="top" constant="30" id="QwF-kM-Yyv"/>
+                            <constraint firstItem="j8e-Ca-sHB" firstAttribute="leading" secondItem="Sjy-XT-q3a" secondAttribute="leading" constant="20" id="afe-fl-daB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Sjy-XT-q3a"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="sideBarButton" destination="j8e-Ca-sHB" id="ka8-oR-KI4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DMD-lO-TcR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1471" y="134"/>
+        </scene>
+        <!--RearVC-->
+        <scene sceneID="mKX-Ub-zp1">
+            <objects>
+                <viewController storyboardIdentifier="RearVC" id="T6n-58-OJs" customClass="RearVC" customModule="DrawerSide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KqY-eH-obA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="tS0-lN-3jM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iKn-4U-mji" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu-512" width="64" height="64"/>
+    </resources>
+</document>
